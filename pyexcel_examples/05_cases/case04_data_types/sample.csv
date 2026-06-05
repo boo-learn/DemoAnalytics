@@ -1,0 +1,6 @@
+Name,Age,Salary,Date,Active,Percentage
+Alice,25,50 000.5,2020-01-15,True,0.85
+Bob,30,60 000.75,2019-06-20,False,0.92
+Charlie,28,55 000,2021-03-10,True,0.78
+Dana,40,45 000.00,15.04.2018,TRUE,1,00
+Eve,35,39 500,04/20/2017,FALSE,0.95
