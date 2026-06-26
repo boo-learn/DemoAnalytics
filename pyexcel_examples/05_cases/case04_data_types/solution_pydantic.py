@@ -8,7 +8,6 @@ class CleanRow(BaseModel):
     age: int = Field(alias="Age")
     salary: float = Field(alias="Salary")
 
-    # Изменили имя поля на payment_date, конфликт с типом date ушел!
     payment_date: date = Field(alias="Date")
 
     active: bool = Field(alias="Active")
@@ -94,7 +93,6 @@ if __name__ == "__main__":
     for row in dirty_rows:
         try:
             validated = CleanRow.model_validate(row)
-            # Доступ к дате теперь через .payment_date
             print(
                 f"Имя: {validated.name:<6} | ЗП: {validated.salary:<8} | Дата: {validated.payment_date} | Активен: {validated.active}")
         except ValidationError as e:
